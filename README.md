@@ -4,6 +4,8 @@
 
 > Youtube videolarını MP3'e dönüştürebileceğiniz bir internet sitesi.
 
+> Here's how it looks in Heroku : [Youtube To MP3 Converter](https://muhi-youtubetomp3converter.herokuapp.com)
+
 ## **Technologies(Teknolojiler)**
 
 - **NodeJS**
@@ -13,14 +15,14 @@
 
 ## **Installing / Getting started (Yükleme / Projeyi çalıştırma)**
 
-**Before you can get this to work, you must follow the two steps below.**
-
-3. git clone https://github.com/mustafahincal/youtubeToMP3Converter.git
-4. npm install
-5. Go to https://rapidapi.com/ytjar/api/youtube-mp36 and get your free API key by choosing the freemium subscription plan. <br> (https://rapidapi.com/ytjar/api/youtube-mp36 adresine gidin ve freemium abonelik planını seçerek ücretsiz API anahtarınızı alın.)
+1. git clone https://github.com/mustafahincal/youtubeToMP3Converter.git
+2. npm install
+3. Go to https://rapidapi.com/ytjar/api/youtube-mp36 and get your free API key by choosing the freemium subscription plan. <br> (https://rapidapi.com/ytjar/api/youtube-mp36 adresine gidin ve freemium abonelik planını seçerek ücretsiz API anahtarınızı alın.)
    ![](./readme/rapidapi-plan.png)
-6. Add a .env file to the project and add the following variables: API_KEY and API_HOST.
+4. Add a .env file to the project and add the following variables: API_KEY and API_HOST.
    <br> (Projeye bir .env dosyası ekleyin ve şu değişkenleri ekleyin: API_KEY ve API_HOST)
-7. npm run dev
+5. npm run dev
 
 ## **Project Images (Proje Görüntüleri)**
+
+![](./readme/home.png)
