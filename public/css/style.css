@@ -120,7 +120,21 @@ input {
 }
 
 @media (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
   #form input {
-    width: 50%;
+    width: 85%;
+  }
+  #submit-btn {
+    width: 80%;
+    padding: 7px 7px;
+  }
+  .header {
+    padding: 0px 30px;
+  }
+  .success p {
+    width: 80%;
+    margin: auto;
   }
 }
