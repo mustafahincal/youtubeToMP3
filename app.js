@@ -38,7 +38,7 @@ app.post("/convert-mp3", async (req, res) => {
   if (videoId === undefined || videoId === "" || videoId === null) {
     return res.render("index", {
       success: false,
-      message: "Please enter a video ID",
+      message: "Please enter a youtube video URL",
     });
   } else {
     const fetchAPI = await fetch(
