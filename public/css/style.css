@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 20px;
+}
+body,
+input,
+button {
+  color: black;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+.container {
+  background-color: #d2daff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.header {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.inner-container {
+  margin-top: 30px;
+}
+
+form {
+  margin-top: -100px;
+  width: 600px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  width: 70%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+}
+#submit-btn {
+  margin-top: 15px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 50%;
+  border: 2px solid red;
+  color: red;
+  background-color: transparent;
+  font-size: 0.8rem;
+}
+#submit-btn:hover {
+  background-color: red;
+  color: white;
+  transform: scale(1.1);
+}
+
+.errors {
+  border: 2px solid red;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  background-color: red;
+}
+.success p {
+  border: 2px solid #1363df;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  background-color: #1363df;
+}
+
+#download-btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: transparent;
+  border: 2px solid #1363df;
+  color: #1363df;
+  font-size: 0.8rem;
+}
+#download-btn:hover {
+  background-color: #1363df;
+  color: white;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .bottom-container {
+    width: 90%;
+    margin: auto;
+  }
+
+  #form,
+  .success {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #form input {
+    width: 50%;
+  }
+}
