@@ -32,8 +32,6 @@ app.post("/convert-mp3", async (req, res) => {
   const videoURL = req.body.videoURL;
   const indexOfEqual = videoURL.indexOf("=");
   const videoId = videoURL.substr(indexOfEqual + 1, 11);
-  console.log(videoURL);
-  console.log(videoId);
 
   if (videoId === undefined || videoId === "" || videoId === null) {
     return res.render("index", {
