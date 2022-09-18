@@ -32,6 +32,8 @@ app.post("/convert-mp3", async (req, res) => {
   const videoURL = req.body.videoURL;
   const indexOfEqual = videoURL.indexOf("=");
   const videoId = videoURL.substr(indexOfEqual + 1, 11);
+  console.log(videoURL);
+  console.log(videoId);
 
   if (videoId === undefined || videoId === "" || videoId === null) {
     return res.render("index", {
@@ -51,7 +53,7 @@ app.post("/convert-mp3", async (req, res) => {
     );
 
     const fetchResponse = await fetchAPI.json();
-
+    console.log(fetchResponse);
     if (fetchResponse.status === "ok")
       return res.render("index", {
         success: true,
@@ -61,7 +63,7 @@ app.post("/convert-mp3", async (req, res) => {
     else
       return res.render("index", {
         success: false,
-        message: fetchResponse.msg,
+        message: fetchResponse.message,
       });
   }
 });
